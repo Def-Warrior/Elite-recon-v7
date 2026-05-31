@@ -1,4 +1,4 @@
-# Elite Bug Bounty Framework v7.0 — OWASP 2025 Deep Edition
+# Elite Bug Bounty Framework v7.0 — OWASP Deep Edition
 
 > **⚠️ LEGAL DISCLAIMER:** This tool is intended **exclusively** for authorized security testing on systems you have explicit written permission to test (e.g., HackerOne, Bugcrowd, Synack, or private engagements with written scope). Unauthorized use against any system is illegal under the Computer Fraud and Abuse Act (CFAA), UK Computer Misuse Act, and equivalent laws worldwide. The authors assume no liability for misuse.
 
@@ -6,10 +6,10 @@
 
 ## Overview
 
-A fully automated, OWASP 2025–aligned bug bounty reconnaissance and vulnerability discovery framework. Designed for professional security researchers who test on authorized bug bounty programs.
+A fully automated, OWASP –aligned bug bounty reconnaissance and vulnerability discovery framework. Designed for professional security researchers who test on authorized bug bounty programs.
 
 ```
-  ELITE RECON v7.0 -- OWASP 2025 DEEP EDITION
+  ELITE RECON v7.0 -- OWASP  DEEP EDITION
   CTRL+C SKIP | 5-LAYER FP FILTER | WAF DETECT | FULL WORKFLOW
 ```
 
@@ -27,7 +27,7 @@ A fully automated, OWASP 2025–aligned bug bounty reconnaissance and vulnerabil
 
 ---
 
-## OWASP 2025 Coverage
+## OWASP Coverage
 
 | ID | Category | Phase |
 |---|---|---|
@@ -87,7 +87,7 @@ bash elite_recon_v7.sh target.com --phase 5
 
 ### Resume Interrupted Scan
 ```bash
-bash elite_recon_v7.sh --resume ./results_target.com_2025-06-01_10-30
+bash elite_recon_v7.sh --resume ./results_target.com_-06-01_10-30
 ```
 
 ### Full Deep Mode
