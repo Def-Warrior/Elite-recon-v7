@@ -1,0 +1,73 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# ELITE RECON v7.0 — Example Configuration
+# Copy this file: cp config.example.yaml config.yaml
+# Reference it in future GUI wrapper (config.yaml is git-ignored)
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Target ────────────────────────────────────────────────────────────────────
+target:
+  domain: ""                    # e.g. example.com
+  program_url: ""               # HackerOne / Bugcrowd program URL
+  out_of_scope:                 # Subdomains/paths to exclude
+    - "*.internal.example.com"
+    - "mail.example.com"
+
+# ── Phases ────────────────────────────────────────────────────────────────────
+phases:
+  start: 1                      # Start from phase N (1-16)
+  skip: []                      # Skip specific phases e.g. [4, 13]
+
+# ── Scanning Behaviour ────────────────────────────────────────────────────────
+scan:
+  deep: false                   # Deep crawl (katana depth 7)
+  nuclei_all: false             # Full nuclei template scan
+  no_brute: false               # Skip DNS brute-force
+  cloud: false                  # Cloud bucket enumeration
+  asn: false                    # ASN/IP range discovery
+  oob: false                    # OOB SSRF via interactsh
+
+# ── Rate & Threads ────────────────────────────────────────────────────────────
+performance:
+  nuclei_rate: 100              # Nuclei requests/second
+  http_threads: 50              # httpx / curl concurrency
+  timeout_default: 10           # Default curl timeout (seconds)
+  timeout_long: 30              # Long operation timeout (seconds)
+
+# ── Tools Configuration ───────────────────────────────────────────────────────
+tools:
+  resolvers_file: "/root/resolvers.txt"
+  seclists_dir: "/usr/share/seclists"
+  nuclei_templates: "~/nuclei-templates"
+  tools_dir: "/root/tools"
+
+# ── Passive Recon Sources ────────────────────────────────────────────────────
+passive_sources:
+  crtsh: true
+  hackertarget: true
+  rapiddns: true
+  otx: true
+  threatcrowd: true
+  bufferover: true
+  wayback: true
+  gauplus: true
+  amass: true
+  subfinder: true
+  assetfinder: true
+
+# ── Notification (future feature) ────────────────────────────────────────────
+notify:
+  slack_webhook: ""             # Slack webhook for findings alerts
+  discord_webhook: ""           # Discord webhook
+  telegram_token: ""            # Telegram bot token
+  telegram_chat_id: ""          # Telegram chat ID
+  notify_on:                    # Which severities to notify
+    - critical
+    - high
+
+# ── Output ────────────────────────────────────────────────────────────────────
+output:
+  dir: ""                       # Custom output dir (auto-generated if empty)
+  format:                       # Report formats to generate
+    - markdown
+    - json
+  keep_raw: true                # Keep raw tool output files

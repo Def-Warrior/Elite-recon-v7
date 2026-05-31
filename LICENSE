@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Def-Warrior
+Copyright (c) 2025 Elite Recon Contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,24 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+────────────────────────────────────────────────────────────────────────────────
+ADDITIONAL LEGAL NOTICE — AUTHORIZED USE ONLY
+────────────────────────────────────────────────────────────────────────────────
+
+This software is intended exclusively for:
+  - Authorized bug bounty programs (HackerOne, Bugcrowd, Synack, Intigriti, etc.)
+  - Penetration testing engagements with written authorization
+  - Security research on systems you own or control
+  - Educational and academic research in controlled environments
+
+Use of this software against systems without explicit written authorization
+from the system owner is illegal and may violate:
+  - Computer Fraud and Abuse Act (CFAA) — United States
+  - Computer Misuse Act — United Kingdom
+  - Cybercrime laws in your jurisdiction
+
+The authors, contributors, and distributors of this software accept NO
+liability for unauthorized or malicious use. By using this software, you
+agree that you have obtained all necessary authorizations and that you
+accept full legal and ethical responsibility for your actions.

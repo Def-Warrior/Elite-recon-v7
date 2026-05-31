@@ -1,0 +1,78 @@
+# ── Scan Output Directories ───────────────────────────────────────────────────
+results_*/
+output_*/
+recon_*/
+*.checkpoint
+
+# ── Sensitive / Personal Files ────────────────────────────────────────────────
+.env
+*.env
+config.local.yaml
+secrets.yaml
+tokens.txt
+api_keys.txt
+github_token.txt
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+.pytest_cache/
+htmlcov/
+.mypy_cache/
+venv/
+env/
+ENV/
+.venv/
+
+# ── Go ────────────────────────────────────────────────────────────────────────
+*.exe
+*.test
+*.out
+vendor/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Editors ───────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+*.tmproj
+
+# ── Logs / Temp ───────────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+*.orig
+/tmp/
+/temp/
+
+# ── Tool Caches ───────────────────────────────────────────────────────────────
+.nuclei/
+.amass/
+.subfinder/
+.config/
